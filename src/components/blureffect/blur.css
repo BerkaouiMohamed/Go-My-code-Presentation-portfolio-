@@ -1,0 +1,31 @@
+.blur{
+    position: absolute;
+width: 100vw;
+min-height: inherit;
+filter: blur(150px);
+z-index: 2;
+}
+.blur :nth-child(1){
+    position: absolute;
+    width: 10rem;
+    height: 10rem;
+    background-color: var(--red);
+
+}
+
+.blur :nth-child(2){
+    position: absolute;
+    width: 10rem;
+    height: 10rem;
+    background-color: var(--red);
+    right: 0;
+    bottom: 0;
+}
+.blur :nth-child(3){
+    position: absolute;
+bottom: 0;
+    width: 10rem;
+    height: 10rem;
+    background-color: var(--blue);
+    
+}

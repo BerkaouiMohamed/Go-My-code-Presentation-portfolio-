@@ -1,0 +1,49 @@
+.navbar{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height:3rem ;
+    color: var(--red);
+    font-size: 1.2rem;
+    backdrop-filter: blur(5px);
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    transition: all 0.2s ease;
+}
+.l-navbar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+}
+.l-navbar>img{
+    height:2.5rem;
+    margin-right: 1rem;
+}
+.l-navbar>span{
+    font-weight: 600;
+}
+
+.r-navbar{
+    flex: 1.5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ font-weight: 500;
+    gap: 2rem;
+}
+
+.r-navbar li{
+    list-style: none;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.r-navbar li:hover{
+    text-shadow: 2px 2px 4px var(--red);
+    scale: 1.1;
+}
+.r-navbar li:active{
+    scale: 1;
+}
