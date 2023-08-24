@@ -4,6 +4,7 @@ import phoneImg from "../../assets/phone.png";
 import emailImg from "../../assets/email.png";
 import { useRef } from "react";
 import emailjs from '@emailjs/browser';
+import {motion}from 'framer-motion'
 
 
 function Contact() {
@@ -41,27 +42,27 @@ function Contact() {
   return (
     <div className="contact">
       <div className="c-right">
-        <div className="contacticons">
+        <motion.div  initial={{opacity:0,x:60}} whileInView={{opacity:1,x: 0}} transition={{delay:0.5 ,duration:0.6 ,ease:'easeIn'}}  className="contacticons">
           <img src={locationimg} alt="" />
           <span>
             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime,
             quaerat.
           </span>
-        </div>
-        <div className="contacticons">
+        </motion.div>
+        <motion.div  initial={{opacity:0,x:-60}} whileInView={{opacity:1,x: 0}} transition={{delay:0.5 ,duration:0.6 ,ease:'easeIn'}} className="contacticons">
           <img src={phoneImg} alt="" />
           <span>
             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime,
             quaerat.
           </span>
-        </div>
-        <div className="contacticons">
+        </motion.div>
+        <motion.div  initial={{opacity:0,x:60}} whileInView={{opacity:1,x: 0}} transition={{delay:0.5 ,duration:0.6 ,ease:'easeIn'}} className="contacticons">
           <img src={emailImg} alt="" />
           <span>
             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime,
             quaerat.
           </span>
-        </div>
+        </motion.div>
       </div>
 
       <div className="c-form">

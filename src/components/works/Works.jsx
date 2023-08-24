@@ -52,30 +52,38 @@ function Works() {
       >
         <SwiperSlide>
           <img src={project1} alt="slide_image" />
-    <button>giiiC</button>
+    <button>Vesit</button>
 
         </SwiperSlide>
         <SwiperSlide>
           <img src={project2} alt="slide_image" />
-    <button>giiiC</button>
+    <button>Vesit</button>
 
         </SwiperSlide>
         <SwiperSlide>
           <img src={project3} alt="slide_image" />
-          <button>giiiC</button>
+          <button>Vesit</button>
 
         </SwiperSlide>
         <SwiperSlide>
           <img src={project4} alt="slide_image" />
+          <button>Vesit</button>
+
         </SwiperSlide>
         <SwiperSlide>
           <img src={project5} alt="slide_image" />
+          <button>Vesit</button>
+
         </SwiperSlide>
         <SwiperSlide>
           <img src={project6} alt="slide_image" />
+          <button>Vesit</button>
+
         </SwiperSlide>
         <SwiperSlide>
           <img src={project7} alt="slide_image" />
+          <button>Vesit</button>
+
         </SwiperSlide>
 
         <div className="slider-controler">

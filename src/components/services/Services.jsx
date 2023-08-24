@@ -1,6 +1,7 @@
 import  './services.css'
 import Card from '../cards/Card'
 import image from '../../assets/image.png'
+import {motion} from 'framer-motion'
 
 
 
@@ -16,18 +17,18 @@ function Services () {
       <div className="r_services">
         <div className='circle'></div>
 
-<div className="card1 cards">
+<motion.div initial={{opacity:0,x:-50}} whileInView={{opacity:1,x:0,rotate:30}}transition={{delay:1}}   className="card1 cards">
 <Card  img={image} title={'disign'} disc={'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla nam,'}/>
      
-</div>
-<div className="card2 cards">
+</motion.div>
+<motion.div initial={{opacity:0,x:-50}} whileInView={{opacity:1,x:0,rotate:10}}transition={{delay:1}}  className="card2 cards">
 <Card  img={image} title={'disign'} disc={'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla nam,'}/>
      
-</div>
-<div className="card3 cards">
+</motion.div>
+<motion.div initial={{opacity:0,x:-50}} whileInView={{opacity:1,x:0,rotate:-12}} transition={{delay:1}} className="card3 cards">
 <Card  img={image} title={'disign'} disc={'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla nam,'}/>
      
-</div>
+</motion.div>
       </div>
 
     </div>

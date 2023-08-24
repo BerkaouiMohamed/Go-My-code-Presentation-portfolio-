@@ -7,22 +7,26 @@ import Blur from '../blureffect/Blur'
 
 
 
+import {motion} from 'framer-motion'
+
+
+
 function Home() {
   return (
 <div className="home" id='#home'>
   <Blur/>
 <div className="h-left">
-<h1>Hello I Am </h1>
-<h2>Mohamed</h2>
-<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit, laboriosam. Doloremque, voluptate minima veniam beatae ipsam odit nisi repellat nihil fugit esse reiciendis officiis cupiditate, atque at repellendus error unde?</p>
-<button> Hire Me</button>
+<motion.h1 initial={{opacity:0,y:50}} whileInView={{opacity:1,y: 0}} tra style={{transition:'all 0.5s ease '}}>Hello I Am </motion.h1>
+<motion.h2 initial={{opacity:0,x:50}} whileInView={{opacity:1,x: 0}} style={{transition:'all 0.3s ease '}}>Mohamed</motion.h2>
+<motion.p initial={{opacity:0}} transition={{delay:0.5 ,duration:0.5 ,ease:'easeIn'}} whileInView={{opacity:1}} >Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit, laboriosam. Doloremque, voluptate minima veniam beatae ipsam odit nisi repellat nihil fugit esse reiciendis officiis cupiditate, atque at repellendus error unde?</motion.p>
+<button> Lets work Toogether</button>
 <div className="h-icons">
     <img src={facebook} alt="" />
     <img src={instagram} alt="" />
     <img src={linkedin} alt="" />
 </div>
 </div>
-<div className="h-right">
+<motion.div initial={{opacity:0,x:-200}} whileInView={{opacity:1,x: 0}} transition={{delay:0.5 ,duration:0.5 ,ease:'easeIn'}}  className="h-right">
 <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
   <path fill="#E24B64" d="M58.4,-13.7C65.8,3.7,55,32.3,33.8,48.1C12.6,63.8,-19,66.8,-40.3,52.1C-61.6,37.4,-72.5,5.2,-64,-13.7C-55.6,-32.5,-27.8,-38,-1.1,-37.6C25.5,-37.2,51.1,-31.1,58.4,-13.7Z" transform="translate(100 100)" />
 </svg>
@@ -33,7 +37,7 @@ function Home() {
 
 <img src={myimg} alt="" />
 
-</div>
+</motion.div>
 
 
 </div>  )

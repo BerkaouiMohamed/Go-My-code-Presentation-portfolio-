@@ -48,6 +48,11 @@ height: 20rem;
     position: relative;
     
   }
+  .swiper_container button{
+    position: absolute;
+    top: 15rem;
+    background-color: rgba(67, 67, 248, 0.568);
+  }
   
   .swiper-slide {
     width:40rem;

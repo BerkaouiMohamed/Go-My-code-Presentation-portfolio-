@@ -65,24 +65,23 @@ z-index: 0;
 }
 .card1{
     position: absolute;
-    transform: rotate(30deg);
     top: 0;
 }
 .card2{
     position: absolute;
-    transform: rotate(7deg);
+   
     bottom: -10%;
 }.card3{
     top: 10%;
     right: 1%;
     position: absolute;
-    transform: rotate(-12deg);
+    
 }
 .cards{
     transition: all 0.2s  ease;
     z-index: 4;
 }
 .cards:hover{
-transform: rotate(0deg);
+transform: rotate(0deg) !important;
 scale: 1.2;
 z-index: 1000;}
